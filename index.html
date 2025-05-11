@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forero Touristic Vacations</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background: #0099cc;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .hero .btn {
+      background: #ffcc00;
+      color: black;
+      padding: 10px 20px;
+      margin-top: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      background: white;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #006699;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: #f8f8f8;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 280px;
+    }
+
+    .card h3 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 1rem auto;
+    }
+
+    .contact input, .contact textarea {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .contact button {
+      background: #0099cc;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Forero Touristic Vacations</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#packages">Packages</a>
+      <a href="#families">Family Trips</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sun. Sand. Memories.</h1>
+      <p>Discover the best beach getaways in Colombia and the world.</p>
+      <a href="#packages" class="btn">Explore Packages</a>
+    </div>
+  </section>
+
+  <section id="packages" class="section">
+    <h2>International Beach Escapes</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Cancún, Mexico</h3>
+        <p>All-inclusive + Xcaret + Isla Mujeres</p>
+        <p><strong>From: COP 5.2 million</strong></p>
+      </div>
+      <div class="card">
+        <h3>Punta Cana</h3>
+        <p>Resort + Saona Island + Catamaran</p>
+        <p><strong>From: COP 6.3 million</strong></p>
+      </div>
+      <div class="card">
+        <h3>Rio de Janeiro</h3>
+        <p>Copacabana + Christ the Redeemer</p>
+        <p><strong>From: COP 5.8 million</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>National Getaways (Colombia)</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>San Andrés</h3>
+        <p>Island tour + Johnny Cay + Aquarium</p>
+        <p><strong>From: COP 1.75 million</strong></p>
+      </div>
+      <div class="card">
+        <h3>Nuquí, Chocó</h3>
+        <p>Thermal waters + Whale watching</p>
+        <p><strong>From: COP 2.2 million</strong></p>
+      </div>
+      <div class="card">
+        <h3>Cartagena</h3>
+        <p>Historic center + Rosario Islands</p>
+        <p><strong>From: COP 1.45 million</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="families" class="section">
+    <h2>Family Packages (2 adults + 2 kids)</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Riviera Maya</h3>
+        <p>Hotel + Xcaret + Family fun</p>
+        <p><strong>From: COP 15.5 million</strong></p>
+      </div>
+      <div class="card">
+        <h3>Punta Cana Family</h3>
+        <p>Water park + Catamaran + All-inclusive</p>
+        <p><strong>From: COP 14.9 million</strong></p>
+      </div>
+      <div class="card">
+        <h3>San Andrés Family</h3>
+        <p>Johnny Cay + Chiva + Aquarium</p>
+        <p><strong>From: COP 4.95 million</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>WhatsApp: +57 300 123 4567 | Email: info@forerotouristic.com</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Forero Touristic Vacations</p>
+  </footer>
+
+</body>
+</html>
